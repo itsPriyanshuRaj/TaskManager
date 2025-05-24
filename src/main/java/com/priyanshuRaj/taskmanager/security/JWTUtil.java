@@ -11,7 +11,7 @@ import io.jsonwebtoken.security.Keys;
 
 @Component
 public class JWTUtil {
-    private final String JwtSecret = "a_very_long_and_secure_base64_encoded_secret_key_for_your_jwt_signing_algorithm_at_least_32_bytes";
+    private final String JwtSecret = "e8502bcab5f1093dff4b3c08e2b5bef2cf72895fadb4fb3e808a131271bdcc2dcc9a49e2d0583cf5c9504570db1cb14e73900f211b5b36b6ad1ff31d48f140f1";
 
     private Key getSigningKey() {
         byte[] keyBytes = Decoders.BASE64.decode(JwtSecret);
